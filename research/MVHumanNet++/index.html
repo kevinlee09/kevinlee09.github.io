@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+   
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>"> -->
+  <link rel="icon" type="image/png" href="/icon/tengzhen.png">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Alegreya+SC&family=Lora:wght@400&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+
+
+
+<div class="row pt-1 m-1">
+              
+
+<div class="container" style="text-align:center;">
+
+
+
+  <div class="row mb-2">
+    <div class="col">
+      <p class="full-title"> MVHumanNet++: A Large-scale Dataset of Multi-view <br> Daily Dressing Human Captures with Richer Annotations <br> for 3D Human Digitization </p>
+    </div>
+  </div>
+  
+  <!-- <div class="row mb-4">
+    <div class="col">
+			
+					<img src=/media/papers/vector-heat-method/big_teaser.jpg class="img-fluid big-teaser-image drop-shadow" alt="big teaser image">
+			
+		</div>
+  </div> -->
+  
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center flex-wrap authors-list">
+        
+          <div class="ml-2 mr-2">
+          
+            <a href="https://kevinlee09.github.io" class="plain-link">Chenghong Li</a><a class="plain-wo-link"><sup>1, 2</sup></a>
+          
+          </div>
+        
+          <div class="ml-2 mr-2">
+          
+            <a class="plain-wo-link">Hongjie Liao<sup>2</sup></a>
+          
+          </div>
+        
+
+          <div class="ml-2 mr-2">
+          
+            <a  class="plain-wo-link">Yihao Zhi</a><a class="plain-wo-link"><sup> 1, 2</sup></a>
+          
+          </div>
+
+
+          <div class="ml-2 mr-2">
+          
+            <a  class="plain-wo-link">Xihe Yang</a><a class="plain-wo-link"><sup>2</sup></a>
+          
+          </div>
+
+
+          <div class="ml-2 mr-2">
+          
+            <a  class="plain-wo-link">Zhengwentai Sun</a><a class="plain-wo-link"><sup>1, 2</sup></a>
+          
+          </div>
+
+
+          <div class="ml-2 mr-2">
+          
+            <a class="plain-wo-link">Jiahao Chang</a><a class="plain-wo-link"><sup>1, 2</sup></a>
+          
+          </div>
+          
+          <!-- 插入换行控制 -->
+          <div style="width: 100%;"></div>
+          
+          <div class="ml-2 mr-2">
+          
+            <a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang" class="plain-link">Shuguang Cui</a><a class="plain-wo-link"><sup>2, 1</sup></a>
+          
+          </div>
+
+          <div class="ml-2 mr-2">
+          
+            <a href="https://gaplab.cuhk.edu.cn/pages/people" class="plain-link">Xiaoguang Han</a><a class="plain-wo-link"><sup>†2, 1</sup></a>
+          
+          </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col schools-list">
+      <p>1. FNii, CUHKSZ &nbsp; &nbsp; 2. SSE, CUHKSZ &nbsp;&nbsp; </p>
+    </div>
+  </div>
+
+  <!-- <div class="row mb-2">
+    <div class="col publication-status">
+      ACM Transactions on Graphics (SIGGRAPH Asia 2023) 
+    </div>
+  </div> -->
+
+  <div class="row mb-3">
+    <div class="col">
+      
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col">
+      
+      <div class="d-flex justify-content-center flex-wrap">
+     
+        <div>
+          <a href="/media/papers/EMS/EMS.pdf" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">pdf (12MB)</a>
+        </div>
+
+        <div>
+          <a href="https://github.com/kevinlee09/EMS_dataset" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">data</a> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mb-4">
+    <div class="col">
+      <img src=/media/research/MVHumanNet++/MVHumanNet++_teaser.jpg class="img-fluid big-teaser-image drop-shadow" style="width: 98%;" alt="big teaser image">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p class="abstract">
+        Nowadays, 3D heads can be easily digitalized with high-fidelity geometry and texture, like the setup used in FaceScape. In this work, we proposed EMS, a learning-based approach, which can further reconstruct 3D eyebrows from just the frontal-view image. (a) the input image. (b) the cropped eyebrow image from (a). (c) our reconstructed fiber-level 3D eyebrow model rendered with multiple views. (d) the cropped rendering of (e) for comparison with (b). (e) putting our result on the textured 3D head can further improve the realism of face digitalization.
+      </p>
+    </div>
+  </div>
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Abstract</p>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <p class="abstract">
+        In this era, the success of large language models and text-to-image models can be attributed to the driving force of large-scale
+      datasets. However, in the realm of 3D vision, while significant progress has been achieved in object-centric tasks through large-scale
+      datasets like Objaverse and MVImgNet, human-centric tasks have seen limited advancement, largely due to the absence of a comparable
+      large-scale human dataset. To bridge this gap, we present MVHumanNet++, a dataset that comprises multi-view human action
+      sequences of 4,500 human identities. The primary focus of our work is on collecting human data that features a large number of diverse
+      identities and everyday clothing using multi-view human capture systems, which facilitates easily scalable data collection. Our dataset
+      contains 9,000 daily outfits, 60,000 motion sequences and 645 million frames with extensive annotations, including human masks,
+      camera parameters, 2D and 3D keypoints, SMPL/SMPLX parameters, and corresponding textual descriptions. Additionally, the proposed
+      MVHumanNet++ dataset is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and
+      utility for advanced human-centric research. To explore the potential of our proposed MVHumanNet++ dataset in various 2D and 3D
+      visual tasks, we conducted several pilot studies to demonstrate the performance improvements and effective applications enabled by the
+      scale provided by MVHumanNet++. As the current largest-scale 3D human dataset, we hope that the release of MVHumanNet++ dataset
+      with annotations will foster further innovations in the domain of 3D human-centric tasks at scale.
+      </p>
+    </div>
+  </div>
+  
+
+  
+  <!-- <div class="row">
+    <div class="col-1"> </div>
+    <div class="col">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/MNbM78xIriM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-1"> </div>
+  </div> -->
+  
+
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Overview</p>
+    </div>
+  </div>
+  <br/>
+      
+  <div class="container" style="text-align:center;">
+  
+    <div class="row justify-content-center mb-1">
+      <img src= /media/research/MVHumanNet++/process_new.png class="img-fluid  drop-shadow" style="width: 75%;" object-fit: cover;>
+    </div>
+    
+    <div class="row justify-content-center">
+        <p class="abstract"> Data annotation pipeline. The manual and automatic annotation pipeline for action localization, text description, masks, 2D/3D keypoints, parametric models, normal maps and depth maps for building comprehensive 4D human datasets. </p>
+    </div>
+    <br/>
+    <br/>
+  
+  </div>  
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>New Masks</p>
+    </div>
+  </div>
+  <br/>
+
+  <div class="container" style="text-align:center;">
+  
+    <div class="row justify-content-center mb-1">
+        
+          <img src= /media/research/MVHumanNet++/mask_v1.png style="max-height:650pt;" class="paper-image img-fluid selected-figure drop-shadow"  object-fit: cover;>
+        
+    </div>
+
+    <div class="row justify-content-center">
+      <p class="abstract"> Mask processing visualization. From left to right in each column are the input image, SAM segmentation result, Sapiens segmentation result, and final mask after post-processing. </p>
+    </div>
+    <br/>
+    <br/>
+  
+  </div>  
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>New SMPLX</p>
+    </div>
+  </div>
+  <br/>
+
+  <div class="container" style="text-align:center;">
+  
+    <div class="row justify-content-center mb-1">
+        
+          <img src= /media/research/MVHumanNet++/smplx_comparison.png style="max-height:400pt;" class="paper-image img-fluid selected-figure drop-shadow">
+        
+    </div>
+    <div class="row justify-content-center">
+      <p class="abstract"> SMPLX comparsion results. The zoom-in boxes with blue dot lines show the annotation quality before optimization and the pink ones show quality improvements. Previous SMPLX estimation results show ankle twisting and self-intersection artifacts in the left column images, as well as misalignment in the right column images. In contrast, our optimized pipeline incorporates a body pose prior to regularize human pose estimation, effectively addressing these limitations. </p>
+    </div>
+
+    <br/>
+    <br/>
+  
+  </div>  
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Normal Map</p>
+    </div>
+  </div>
+  <br/>
+
+
+  <div class="container" style="text-align:center;">
+  
+    <div class="row justify-content-center mb-1">
+        
+          <img src= /media/research/MVHumanNet++/normal_comparison.png style="max-height:600pt;" class="paper-image img-fluid selected-figure drop-shadow">
+        
+    </div>
+    <div class="row justify-content-center">
+      <p class="abstract"> Normal visualization. From left to right of each column are the original image, Sapiens estimated normal, 2DGS rendered normal without Sapiens normal, and 2DGS rendered normal with Sapiens normal input. </p>
+    </div>
+
+    <br/>
+    <br/>
+  
+  </div>  
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Depth Map</p>
+    </div>
+  </div>
+  <br/>
+
+
+  <div class="container" style="text-align:center;">
+  
+    <div class="row justify-content-center mb-1">
+        
+          <img src= /media/research/MVHumanNet++/depth_vis.png style="max-height:650pt;" class="paper-image img-fluid selected-figure drop-shadow">
+        
+    </div>
+    <div class="row justify-content-center">
+      <p class="abstract"> Visual results of depth maps rendered from normal-refined 2DGS. </p>
+    </div>
+
+    <br/>
+    <br/>
+  
+  </div>  
+
+
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Reference</p>
+    </div>
+  </div>
+
+
+  <div class="bibtex">
+    <pre> <code class="bibtex-code">
+      @inproceedings{xiong2024mvhumannet,
+        title={Mvhumannet: A large-scale dataset of multi-view daily dressing human captures},
+        author={Xiong, Zhangyang and Li, Chenghong and Liu, Kenkun and Liao, Hongjie and Hu, Jianqiao and Zhu, Junyi and Ning, Shuliang and Qiu, Lingteng and Wang, Chongjie and Wang, Shijie and others},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        pages={19801--19811},
+        year={2024}
+      }
+    </code></pre>
+  </div>
+  
+
+
+</div>
+
+<div class="row">
+  <div class="col">
+    
+  </div>
+</div>
+
+
+            </div>
+          </div>
+          <div class="col-xl-1"></div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+    
+  <footer>
+
+
+<div class="row">
+<div class="col-12">
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+
+</footer>
+
+
+</html>
