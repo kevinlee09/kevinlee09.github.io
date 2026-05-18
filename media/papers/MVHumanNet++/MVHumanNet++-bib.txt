@@ -1,0 +1,7 @@
+@article{li2026mvhumannet++,
+  title={MVHumanNet++: A large-scale dataset of multi-view daily dressing human captures with richer annotations for 3d human digitization},
+  author={Li, Chenghong and Liao, Hongjie and Zhi, Yihao and Yang, Xihe and Sun, Zhengwentai and Chang, Jiahao and Cui, Shuguang and Han, Xiaoguang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  publisher={IEEE}
+}

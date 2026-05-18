@@ -1,0 +1,7 @@
+@inproceedings{zhi2025mv,
+  title={MV-Performer: Taming Video Diffusion Model for Faithful and Synchronized Multi-view Performer Synthesis},
+  author={Zhi, Yihao and Li, Chenghong and Liao, Hongjie and Yang, Xihe and Sun, Zhengwentai and Chang, Jiahao and Cun, Xiaodong and Feng, Wensen and Han, Xiaoguang},
+  booktitle={Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
+  pages={1--14},
+  year={2025}
+}
